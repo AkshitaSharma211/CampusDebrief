@@ -1,4 +1,4 @@
-const BASE = import.meta.env.VITE_API_URL;
+const BASE = import.meta.env.VITE_API_URL || 'https://campusdebrief.onrender.com/api';
 
 export async function api(path, { method = 'GET', body } = {}) {
   const token = localStorage.getItem('token');
