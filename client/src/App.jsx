@@ -10,7 +10,7 @@ export default function App() {
   return (
     <>
       <nav>
-        <Link to="/" className="brand">PlaceBoard</Link>
+        <Link to="/" className="brand">CampusDebrief</Link>
         <div>
           {user ? (
             <>

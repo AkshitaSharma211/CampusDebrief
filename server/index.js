@@ -8,7 +8,7 @@ const app = express();
 app.use(cors({ origin: process.env.CLIENT_URL }));
 app.use(express.json());
 
-app.get('/', (_, res) => res.send('PlaceBoard API'));
+app.get('/', (_, res) => res.send('CampusDebrief API'));
 app.use('/api/auth', require('./routes/auth'));
 app.use('/api/experiences', require('./routes/experiences'));
 
